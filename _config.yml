@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://chrismarksus.github.io/laura_blog/
+root: /laura_blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -69,6 +69,6 @@ theme: clean-blog
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github
+  type: git
   repository: https://github.com/chrismarksus/laura_blog.git
   branch: gh-pages
