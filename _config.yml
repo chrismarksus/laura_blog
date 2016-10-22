@@ -69,4 +69,6 @@ theme: clean-blog
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github
+  repository: https://github.com/chrismarksus/laura_blog.git
+  branch: gh-pages
