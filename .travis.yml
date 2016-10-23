@@ -17,7 +17,7 @@ after_success:
   - cd public
   - git init
   - git add .
-  - git commit -m "Deploy to Github Pages"
+  - git commit -m "`Deploy to Github Pages (`date`)"
   - git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REPO}.git" master:gh-pages > /dev/null 2>&1
 env:
   global:
