@@ -16,6 +16,6 @@ before_script:
     - git config --global user.email 'chrismarksus@gmail.com'
 
 script:
-    - npm run deploy
+    - hexo generate
 
 env: CI=true
