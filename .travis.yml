@@ -1,30 +1,26 @@
 language: node_js
-
 node_js:
-    - "6.4.0"
-
+  - 6.4.0
 branches:
   only:
-  - master
-
+    - master
 before_install:
-    - npm install -g hexo
-    - npm install -g hexo-cli
-
+  - npm install -g hexo
+  - npm install -g hexo-cli
 install:
-    - npm install
-
+  - npm install
 before_script:
-    - git config --global user.name 'chrismarksus'
-    - git config --global user.email 'chrismarksus@gmail.com'
-    - sed -i'' "s~git@github.com:chrismarksus/laura_blog.git~https://${GH_TOKEN}:x-oauth-basic@github.com:chrismarksus/laura_blog.git~" _config.yml
-
+  - git config --global user.name 'chrismarksus'
+  - git config --global user.email 'chrismarksus@gmail.com'
+  - >-
+    sed -i''
+    "s~git@github.com:${GH_REPO}.git~https://${GH_TOKEN}:x-oauth-basic@github.com:chrismarksus/laura_blog.git~"
+    _config.yml
 script:
-    - hexo generate
-
+  - hexo generate
 after_success:
-    - hexo deploy
-
+  - hexo deploy
 env:
   global:
-    secure: 5MQyhYUYtvt2nrh074A13hCAHASOZokBSX/fL6cOUPJTmzL+nFBKx+o8DGuVnUVlwFJRmtlzG66RYa/akOnO7wtJ/tYPK5adIQd9NqGvTXdJ0t6yd7XD6KcyUCRBkmI4IvMKlltJxs29wCopA8Remirv5bNMa+umFTrplBBb7NJjE3X9imgakiE7lnSES6IclFzWEKb2YhYumL3cK6LoWxKbat1ZyNGNXORn7ef9mbk9jQhwSaZn/8U9fjKEdojfo0B55mRNBGwZZ9KTcmK8b/vu3HLcfibkyY2J0xPha7UiXmomoxngurQ+qfJDdRwV3uH/OOPETy1jQb1fqrsnFJgr1P67UvtMTgtskui35n9gqWzZMGgJWPIdAshyOrbBMDuQgBdhkLmP3myjxsUW5vbl/4JKlcUZT9KSv3HdKr2BecKFEEAHpejsyTR+7OpTb7u3qbHIaCdx7BgBqKalzI4b6zD/VG+9CEtwfmEZsSekJk6QEJ1bF1FzJ4c9qWSxRhSOBtIMviixbgQXpxTPJFkzEAoFMiOAapNh5XDHfijk6p+QQma2FQ8oJI7kfcITY2Vi5tgmQim6kkrYVHzA0f3Licl1TLcPYLWsHVZVWUe2+JO5B7MVHDt5HJNzmKAPVSp2lJPbH6BKZaENxlJkdyMiJkirBNjp33qRqs2rUhw=
+    - secure: >-
+        Q999LlwWRxah4VfzlgEtMZImtLwMrfCrQm6EUYhhY4eaLw7UQXMbqiDKAAVC1c2UOijAjO4pJawWOYri7E746xYoqbN5VaBQgwYFRcyM/ZDUjMh0Xw2tga/PiJihgQMSO7aK4puY0yMsw5H7b15Om6fDLUWxhvaN+7z4K1umxV9OOt/zsyQA5NaVE0FFlVkD+uzSbvHeheX3RNpi3OvhNrdQZ9yRbutn2gixNJi/qvCj+/ir8nx/8Ey3WQV7t/kN+Xky0SVr1aVpZi754c6xrTud5nQJRW/DEB31LRAadz2Ff8wjX2rfh+OY+qbPWlDVD33x/d3/Nfxhq8f0xcF1yWzTX/X/yHwQunJWYLMDbtHqdptFdKMRY97pn9R7eeNQJOOEMARIFTZr6fS2SSKUUk7Wko9q2kICelzSni9JHZl3jU7JAe4xOOaC3crVpVqfgcK6DzoXGGj33K/8OfCWJgZto/TOPd4BneRU+WLmMhtSy9aTSMpJUVbLddRWrRIjhONyukHaSixbL8TB0+rzGrrg/KIeOSl1nSZeo9ZoE3XkO55Q3lQa3v/JlMlKMxG9ibhn4wGhRAB6g0sp5jdzBAez709ikeE0aayqki8fYxEVAhBjwZOFKQ4E/gXuYanLEuFlP0/Lh12htZMSpOebjB8vOSqWydVB/OC9GK9tpHg=
