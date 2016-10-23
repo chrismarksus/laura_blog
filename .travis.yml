@@ -17,7 +17,7 @@ install:
 before_script:
     - git config --global user.name 'chrismarksus'
     - git config --global user.email 'chrismarksus@gmail.com'
-    - sed -i'' "s~git@github.com:chrismarksus/laura_blog.git~https://b55af07b978b359ba440fa5db27da995245fe7bf:x-oauth-basic@github.com:chrismarksus/laura_blog.git~" _config.yml
+    - sed -i'' "s~git@github.com:chrismarksus/laura_blog.git~https://FQHOZ6XeATpI4b7b/mtkqkOiK5hme2w3dufApfAsKmT7pIlqtiavk71cd2/mDS+U9HAnQOYjB6wBlSSno01orIujJ7SZhDQM547Xn9Hg/eLHDs1ZYqP/+s4EQO7dDprsWj2hnBOOAtyeXS9odQWlq97Ps0vw46HgbJs91Sd0GIcQjTaKH5iaNwMSOuGQseqo8AmEV4lhePZNlKJUkDvIcqwhU7U5XODdDm2SkoZOOYJKAIHEZ5tcEKud1ONSjmVKu+jGWdG8Y0zGS+Eb3azSpsTNrkiKeUwsLfcyLkRWJzcq/znbVLG21pHgnkZvSFd9F4V8FHeX26aI8yOrF2YzpM4BdCg5o+TxQwAsI+T8cc9P+NTo4DrBmE8BxPZNrrUJ94G6avm4LoF3GYeFeAWcrf918MWp8vZObf7ntJ0mW5WIGozVNGvymIz2A/lzDLBm+dIw61FZI2MCcpkyywSE/GZ/iG1f9f53wElhyvRUFPGqs35zQDUxZrlHhhmOES0KrD5/6zPNUkoOk/w03MGT6IQnkLSb8mDzDFJIcnJCXjNrRh9wjF4euOKUXXzg96wqTQWjFi5kV8tv5j2audeGIWGNR7ugeUZ226jW3QGM9NpkSMDT+eMJ1lUlQFPwnU9fQdPlM3oAVjKstpy/IN4VrRnNKtCcXA0k34xs3rUaqFU=:x-oauth-basic@github.com:chrismarksus/laura_blog.git~" _config.yml
 
 script:
     - hexo generate
