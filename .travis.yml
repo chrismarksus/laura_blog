@@ -15,7 +15,11 @@ before_script:
 script:
   - hexo generate
 after_success:
-  - hexo deploy
+  - cd public
+  - git init
+  - git add .
+  - git commit -m "Deploy to Github Pages"
+  - git push --force --quiet "https://${GH_TOKEN}@$github.com/${GH_REPO}.git" master:gh-pages > /dev/null 2>&1
 env:
   global:
     - secure: >-
