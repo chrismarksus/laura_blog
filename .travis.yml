@@ -12,10 +12,6 @@ install:
 before_script:
   - git config --global user.name 'chrismarksus'
   - git config --global user.email 'chrismarksus@gmail.com'
-  - >-
-    sed -i''
-    "s~git@github.com:${GH_REPO}.git~https://${GH_TOKEN}:x-oauth-basic@github.com:chrismarksus/laura_blog.git~"
-    _config.yml
 script:
   - hexo generate
 after_success:
