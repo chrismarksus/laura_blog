@@ -3,6 +3,7 @@ title: Blog about Dogs!
 date: 2016-10-22 17:55:38
 update: 2016-10-22 21:40:00
 tags: ["dog", "bowl", "coller", "leash", "muzzle", "toy", "bed"]
+subtitle: This is a basic list of things you need for your dog.
 ---
 
 Hi, it's Laura. Dogs are not toys. This can help you know what to get when you get your dog.
