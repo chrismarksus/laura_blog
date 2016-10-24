@@ -1,5 +1,5 @@
 # Laura's Blog
-This is your blog laura! 
+This is your blog laura!
 
 ## Installing the project
 
