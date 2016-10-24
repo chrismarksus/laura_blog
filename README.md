@@ -1,4 +1,8 @@
 # Laura's Blog
+
+[![Build Status](https://travis-ci.org/chrismarksus/laura_blog.svg?branch=master)](https://travis-ci.org/chrismarksus/laura_blog)
+
+
 This is your blog laura!
 
 ## Installing the project
