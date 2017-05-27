@@ -1,18 +1,20 @@
-FROM node:latest
+FROM node:7-alpine
 
 MAINTAINER Chris Marks <chrismarksus@gmail.com>
 
 LABEL version="1.0"
 LABEL description="hexo"
 
-RUN mkdir -p /root/blog
-WORKDIR /root/blog
-VOLUME /root/blog
+RUN [ "mkdir", "/root/blog" ]
 
-COPY package.json /root/blog/
-RUN npm install
+ADD [ "package.json", "/root/blog/" ]
+
+WORKDIR /root/blog
+
+RUN npm install --verbose
+ENV NODE_PATH=/root/blog/node_modules
 
 COPY . /root/blog
-
+VOLUME /root/blog
 EXPOSE 4000
 CMD [ "npm", "start" ]
